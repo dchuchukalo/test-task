@@ -1,0 +1,159 @@
+.contact-us {
+  @media screen and (min-width: 768px) {
+    font-size: 0;
+  }
+}
+
+.contact-us--call,
+.contact-us--mail {
+  padding: 20px 0;
+  min-height: 70px;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    display: inline-block;
+    padding: 32px 0;
+    min-height: 120px;
+  }
+}
+
+.contact-us--call {
+  text-align: right;
+  background: #337ab7;
+}
+
+.contact-us--mail {
+  text-align: left;
+  background: #5d9cd2;
+}
+
+.contact-us--position {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.contact-us--call-link,
+.contact-us--mail-link {
+  min-width: 138px;
+  display: inline-block;
+  position: relative;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    top: 0;
+
+    @media screen and (min-width: 768px) {
+      width: 36px;
+      height: 36px;
+      top: 9px;
+    }
+  }
+}
+
+.contact-us--call-link {
+  text-align: left;
+
+  &::after {
+    right: 0;
+    background-image: url(../images/phone.svg);
+  }
+}
+
+.contact-us--call-position {
+  text-align: right;
+  padding-right: 50px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 57px;
+  }
+}
+
+.contact-us--mail-link {
+  text-align: right;
+
+  &::after {
+    left: 0;
+    background-image: url(../images/mail.svg);
+  }
+}
+
+.contact-us--mail-position {
+  text-align: left;
+  padding-left: 50px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 57px;
+  }
+}
+
+.contact-us--description {
+  margin-bottom: 6px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+  }
+}
+
+.footer--list-bg {
+  background: #132e45;
+}
+
+.footer--list {
+  text-align: center;
+  margin: 0 auto;
+  padding: 7px 0 8px 0;
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 12px 15px;
+    justify-content: space-between;
+    min-height: 40px;
+  }
+}
+
+.footer--item {
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
+  font-weight: normal;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer--link {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+}

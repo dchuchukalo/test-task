@@ -1,0 +1,58 @@
+.dropdown--list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown--item {
+  color: #286090;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px 40px 0 15px;
+  cursor: pointer;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &:last-of-type {
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+  }
+}
+
+.show {
+  display: block;
+}
+
+.checked .service-selection--button {
+  color: #286090;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: lowercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+  
+}
+
+.checked .service-selection--button::after {
+  display: none;
+}
+
+.checked{
+  margin-bottom: 20px;
+}
+

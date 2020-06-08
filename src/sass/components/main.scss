@@ -1,0 +1,116 @@
+.main-content {
+  padding-top: 2px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
+}
+
+.service-selection {
+  text-align: center;
+  padding-top: 90px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 150px;
+  }
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../images/bg.jpg);
+  min-height: 530px;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    min-height: 600px;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.service-selection--title {
+  margin: 0 0 26px 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 40px;
+  }
+}
+
+.service-selection--description {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: 38px;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+}
+
+.service-selection--button {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  padding: 13px 40px 13px 15px;
+  text-align: left;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #777777;
+  min-height: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 400px;
+    padding: 11px 40px 10px 20px;
+  }
+
+  &::after {
+    content: '';
+    top: 16px;
+    right: 15px;
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background-image: url(../images/arrow-down-mobile.svg);
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/arrow-down-desktop.svg);
+      width: 22px;
+      height: 12px;
+    }
+  }
+}
+.service-selection--list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 300px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 400px;
+  }
+}
+
+.hidden {
+  display: none;
+}

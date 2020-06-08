@@ -1,0 +1,17 @@
+
+#order-info--service-name,
+#contact-info--name-surname,
+#contact-info--email,
+#contact-info--phone-number,
+#order-info--description {
+    display: block;
+    width: 100%;
+}
+
+textarea {
+  resize: none;
+
+  &::placeholder {
+    color: #c4c4c4;
+  }
+}

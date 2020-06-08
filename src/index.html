@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simbioz</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="site-logo"
+          ><img src="images/logo.png" alt="Simbioz"
+        /></a>
+        <div class="site-navigation--mobile">
+          <button class="site-navigation--menu">
+            <img src="images/menu.png" alt="menu" />
+          </button>
+        </div>
+        <div class="site-navigation--desktop">
+          <button class="site-navigation--item site-navigation--collaboration">
+            сотрудничество
+          </button>
+          <button class="site-navigation--item">вход</button>
+        </div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="banner">
+        <section class="service-selection container">
+          <h2 class="service-selection--title">
+            сохраните свое время для приятных дел,<br />а оценку имущества
+            доверьте профессионалам
+          </h2>
+          <p class="service-selection--description">
+            Выбирайте услугу и оформляйте заявку в несколь кликов
+          </p>
+          <div class="service-selection--list"></div>
+        </section>
+      </div>
+      <section class="order hidden container">
+        <form class="order-form" action="#" method="get">
+          <section class="order-info">
+            <h2 class="order-info--title">Детали заказа:</h2>
+            <label
+              class="order-info--service-name"
+              for="order-info--service-name"
+              >Название услуги*</label
+            >
+            <input
+              type="text"
+              name="service-name"
+              id="order-info--service-name"
+            />
+            <label for="order-info--description"
+              >Опишите что необходимо сделать</label
+            >
+            <textarea
+              name="service-description"
+              id="order-info--description"
+              rows="5"
+              cols="37"
+              placeholder="Текстовое поле для ввода"
+            ></textarea>
+            <input
+              type="file"
+              name="image"
+              accept="image/jpeg,image/png"
+              size="0"
+            />
+          </section>
+          <section class="contact-info">
+            <h2 class="contact-info--title">Контактные данные:</h2>
+            <label
+              class="contact-info--name-surname"
+              for="contact-info--name-surname"
+              >Ваше имя, фамилия*</label
+            ><input
+              type="text"
+              name="name-surname"
+              id="contact-info--name-surname"
+              placeholder="Имя и фамилия"
+            />
+            <label class="contact-info--email" for="contact-info--email"
+              >Ваш Email*</label
+            ><input
+              pattern="[A-Za-z]{1,30}[@][A-Za-z.]+"
+              type="email"
+              name="email"
+              id="contact-info--email"
+              placeholder="Электронная почта"
+            />
+            <label
+              class="contact-info--phone-number"
+              for="contact-info--phone-number"
+              >Ваш номер телефона*</label
+            ><input
+              pattern="[0-9-()+ ]{7,17}"
+              type="tel"
+              name="tel"
+              id="contact-info--phone-number"
+              placeholder="Мобильный номер телефона"
+            />
+          </section>
+
+          <input class="send-request" type="submit" value="Отправить заявку" />
+        </form>
+      </section>
+      <div class="backdrop js-backdrop">
+        <div class="modal hidden">
+          <div class="modal-error hidden">
+            <h2>Уведомление</h2>
+            <p>
+              Вы не заполнили обязательные поля
+            </p>
+          </div>
+          <div class="modal-result hidden">
+          </div>
+          <button
+              type="button"
+              class="button"
+              data-action="close-modal-error"
+            >
+              ОК
+            </button>
+        </div>
+        
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="contact-us">
+        <div class="contact-us--call">
+          <div class="container contact-us--position">
+            <a class="contact-us--call-link" href="tel:+380441112233"
+              ><div class="contact-us--call-position">
+                <p class="contact-us--description">позвонить нам</p>
+                <p>+38 044 111-22-33</p>
+              </div></a
+            >
+          </div>
+        </div>
+        <div class="contact-us--mail">
+          <div class="container contact-us--position">
+            <a class="contact-us--mail-link" href="mailto: crm@simbioz.ua"
+              ><div class="contact-us--mail-position">
+                <p class="contact-us--description">написать нам</p>
+                <p>crm@simbioz.ua</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </section>
+      <div class="footer--list-bg">
+        <ul class="footer--list container">
+          <li class="footer--item">
+            © <a class="footer--link" href="https://simbioz.ua/">Simbioz.ua</a>,
+            2020
+          </li>
+          <li class="footer--item">
+            <a class="footer--link" href="">Политика конфиденциальности</a>
+          </li>
+          <li class="footer--item">
+            <a class="footer--link" href="">Условия использования</a>
+          </li>
+          <li class="footer--item">
+            <a class="footer--link" href="">Українська</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
